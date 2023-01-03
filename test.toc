@@ -1,0 +1,9 @@
+\babel@toc {portuges}{}\relax 
+\contentsline {section}{\numberline {1}Sinais Sinusoidais}{1}{}%
+\contentsline {section}{\numberline {2}Notas Musicais}{1}{}%
+\contentsline {section}{\numberline {3}Impulso e Degrau Unitários}{1}{}%
+\contentsline {section}{\numberline {4}Sistemas}{2}{}%
+\contentsline {section}{\numberline {5}Série de Fourier}{3}{}%
+\contentsline {section}{\numberline {6}Resposta em Frequência}{4}{}%
+\contentsline {section}{\numberline {7}Filtragem}{5}{}%
+\contentsline {section}{\numberline {8}Amostragem}{6}{}%
