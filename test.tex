@@ -6,7 +6,6 @@
 \usepackage{indentfirst}
 \usepackage{graphicx}
 \usepackage{multicol,lipsum}
-\usepackage{musicography}
 
 \begin{document}
 
@@ -61,7 +60,7 @@
     \item \textbf{Q3:}
           \begin{enumerate}
               \item[] Mi$_4$: $329.63hz$
-              \item[] Fá\musSharp$_4$: $370.00hz$
+              \item[] Fá$_4^\#$: $370.00hz$
               \item[] Sol$_4$: $392.00hz$
               \item[] Si$_4$: $493.89hz$
               \item[] Dó$_5$: $554.37hz$
@@ -71,8 +70,23 @@
 \vspace{15px}
 \section{Impulso e Degrau Unitários}
 \begin{itemize}
-    \item \textbf{Q4:}
-
+    \item \textbf{Q4:} Com base na definição de degrau unitário, $u(at+b)$ pode ser escrito como $u(\pm t - t_0)$ uma vez que: $t_0 = \frac{b}{|a|}$, onde temos que
+    \[ \begin{cases} 
+      a > 0, & t > 0\\
+      a < 0, & t < 0
+    \end{cases} \]
+    Caso $a < 0$, verifica-se uma inversão no tempo do gráfico de $u(t)$.
+    \newpage
+    \item \textbf{Q5:} $\delta(at) = \frac{1}{\Delta}[u(at) - u(at - \Delta)]$ e $\delta(at) = \underset{{\Delta\to0}}{lim}\delta_\Delta(at)$, com $a > 0$\vspace{15px}\\
+    Para $\delta(t)$\hspace{150px}Para$\delta(at)$\\
+    \begin{figure}[!ht]
+        \includegraphics[width=6cm]{images/Graf1.png}
+        \hspace{10px}
+        \includegraphics[width=6cm]{images/Graf2.png}
+    \end{figure}\\
+    Área $ = \frac{1}{\Delta}\times\Delta = 1$\hspace{100px}Área $= \frac{1}{\Delta} \times \frac{\Delta}{a} = \frac{1}{a}$\vspace{15px}\\
+    Logo, $\delta(at) = \frac{1}{a}$, com $a > 0$.\vspace{5px}
+    \item \textbf{Q6:} Pela visualização do gráfico de $\delta(at)$, não se verificam alterações em relação ao gráfico de $\delta(t)$, o que não está correto. O escalamento deveria.
 \end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
