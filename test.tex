@@ -85,12 +85,29 @@
               \includegraphics[width=6cm]{images/Graf2.png}
           \end{figure}\\
           Área $ = \frac{1}{\Delta}\times\Delta = 1$\hspace{100px}Área $= \frac{1}{\Delta} \times \frac{\Delta}{a} = \frac{1}{a}$\vspace{15px}\\
-          Logo, $\delta(at) = \frac{1}{a}$, com $a > 0$.\vspace{5px}
-    \item \textbf{Q6:} Pela visualização do gráfico de $\delta(at)$, não se verificam alterações em relação ao gráfico de $\delta(t)$, o que não está correto. O escalamento deveria.
+          Logo, $\delta(at) = \frac{1}{a}\delta(t)$, com $a > 0$.\vspace{5px}
+    \item \textbf{Q6:} Não se verifica nenhuma mudança no gráfico de $\delta(at)$ em relação ao gráfico de $\delta(t)$. No entanto, pelo que foi concluído previamente, o que deveria acontecer seria uma redução da área do impulso devido ao produto pelo termo $\frac{1}{a}$ (sendo $a > 1$) transformação esta que não é visível no visor.
 \end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Sistemas}
+\begin{itemize}
+    \item \textbf{Q7:} O sistema apresentado é linear:
+          \[x_1(t) \to y_1(t) = x_1(t) + 0.5x_1(t - 0.25)\]
+          \[x_2(t) \to y_2(t) = x_2(t) + 0.5x_2(t - 0.25)\]
+          $x_3(t) \to$ Combinação linear de $x_1(t)$ e $x_2(t) : x_3(t) = ax_1(t) + bx_2(t)$\vspace{-5px}
+          \[y_3(t) = x_3(t) + 0.5x_3(t + 0.25)\]
+          \[= ax_1(t) + bx_2(t) + 0.5(ax_1(t - 0.25) + bx_2(t - 0.25))\]
+          \[= ax_1(t) + bx_2(t) + 0.5ax_1(t - 0.25) + 0.5bx_2(t - 0.25)\]
+          \[= a(x_1(t) + 0.5x_1(t - 0.25)) + b(x_2(t) + 0.5x_2(t- 0.25))\]
+          \hspace{105px}$= ay_1(t) + by_2(t) \to$ é linear.\\
+          E é invariante no tempo:
+          \[y_1(t) = x_1(t) + 0.5x_1(t - 0.25)\]
+          \[x_2(t) = x_1(t - t_0) \to y_2(t) = x_2(t) + 0.5x_2(t - 0.25)\]
+          \hspace{184px}$= x_1(t - t_0) + 0.5x_1(t- t_0 - 0.25)$
+          \[y_1(t - t_0) = x_1(t - t_0) + 0.5x_1(t - t_0 - 0.25)\]
+          \hspace{57px}logo $y_2(t) = y_1(t - t_0) \to$ é invariante no tempo.
+\end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Série de Fourier}
