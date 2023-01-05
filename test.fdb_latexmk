@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1672943787 "c:/Users/henri/OneDrive/Documents/Faculdade/LtTest/test.tex" "test.pdf" "test" 1672943787 0
+["pdflatex"] 1672946234 "c:/Users/henri/OneDrive/Documents/Faculdade/LtTest/test.tex" "test.pdf" "test" 1672946235 0
   "C:/Users/henri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1672848011 83255 3eb4ffb7981171850fc29a59916b6f53 ""
   "C:/Users/henri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1672753779 14064 790af3e5d4e0139e6deba17840e0282a ""
   "C:/Users/henri/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1670775939 10805037 82732be7502f590ad3a99b882a281189 ""
@@ -55,13 +55,13 @@
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/tex/latex/lipsum/lipsum.sty" 1633250122 14690 c2c754218a7108db7823a4839c1bc3cd ""
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/tex/latex/tools/indentfirst.sty" 1654687228 1618 6f0598aa81f9ba5cf5d393b4abd3e091 ""
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1654687228 32329 5d201ab4b4c773e7c876c2a052b07be3 ""
-  "c:/Users/henri/OneDrive/Documents/Faculdade/LtTest/test.tex" 1672943786 5688 e18a8dcebbb31679bae9a734ca2c988e ""
+  "c:/Users/henri/OneDrive/Documents/Faculdade/LtTest/test.tex" 1672946233 5690 752a9c281b7fe42880eb01664ee5cad8 ""
   "images/Graf1.png" 1672848079 63711 fea6e490a0e0b2ce94ee7f36faec7cda ""
   "images/Graf2.png" 1672848085 64295 bdb005e2ffdcf57844ae3f1718ae00e0 ""
   "images/IST.png" 1672776055 13908 27cdd2abeb78a4c13453988bc345ed55 ""
-  "test.aux" 1672943787 963 264a4a19891a67dfd8d45920f2623089 "pdflatex"
-  "test.tex" 1672943786 5688 e18a8dcebbb31679bae9a734ca2c988e ""
-  "test.toc" 1672943787 533 cc955795a81d69d42aad1c5e7127b1de "pdflatex"
+  "test.aux" 1672946235 963 264a4a19891a67dfd8d45920f2623089 "pdflatex"
+  "test.tex" 1672946233 5690 752a9c281b7fe42880eb01664ee5cad8 ""
+  "test.toc" 1672946235 533 cc955795a81d69d42aad1c5e7127b1de "pdflatex"
   (generated)
   "test.aux"
   "test.log"
