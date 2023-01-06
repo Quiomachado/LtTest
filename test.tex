@@ -134,6 +134,32 @@
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Resposta em Frequência}
+\begin{itemize}
+    \item \textbf{Q18:} Para determinar o módulo e o argumento da resposta em\\
+          frequência do sistema $H(jw)$ para cada valor de $w$, necessitamos de medir experimentalmente no sinal de saída $y(t)$ a amplitude e a fase da frequência $w$.\\
+          Com esses valores conseguimos calcular a transformada de Fourier de $y(t)$ a partir da fórmula:
+          \[Y(jw) = \int y(t)e^{-jwt}dt\]
+          Com isso conseguimos calcular o módulo de $H(jw)$ a partir da fórmula:
+          \[ |H(jw)| = \frac{ |Y(jw)| }{ |X(jw)| }\]
+          Sendo $X(jw)$a transformada de Fourier de $x(t)$.\\
+          O argumento da resposta em frequência do sistema $H(jw)$ é calculado a partir da fórmula:
+          \[\angle H(jw) = \angle Y(jw) - \angle X(jw)\]
+    \item \textbf{Q19:} Para calcular o módulo da resposta em frequências do sistema3 usaremos a fórmula
+          \[ |H(jw)| = \frac{ |Y(jw)| }{ |X(jw)| }\]
+          em que $|Y(jw)|$ é a amplitude do sinal de saída e $|X(jw)|$ é a amplitude do sinal de entrada dado por $\cos(wt)$.\vspace{15px}
+          \[w = 0, |Y(jw)| = 1 \textrm{ e } |X(jw)| = 1, \textrm{ logo } |H(jw)| = \frac{1}{1} = 1\]
+          \[w = 1, |Y(jw)| = 0.933 \textrm{ e } |X(jw)| = 1, \textrm{ logo } |H(jw)| = \frac{0.933}{1} = 0.933\]
+          \[w = 3, |Y(jw)| = 0.657 \textrm{ e } |X(jw)| = 3, \textrm{ logo } |H(jw)| = \frac{0.657}{3} = 0.219\]
+          \[w = 5, |Y(jw)| = 0.463 \textrm{ e } |X(jw)| = 5, \textrm{ logo } |H(jw)| = \frac{0.463}{5} = 0.0926\]
+          \[w = 10, |Y(jw)| = 0.252 \textrm{ e } |X(jw)| = 10, \textrm{ logo } |H(jw)| = \frac{0.252}{10} = 0.0252\]
+          \[w = 20, |Y(jw)| = 0.130 \textrm{ e } |X(jw)| = 20, \textrm{ logo } |H(jw)| = \frac{0.130}{20} = 0.0065\]
+          \[w = 50, |Y(jw)| = 0.065 \textrm{ e } |X(jw)| = 50, \textrm{ logo } |H(jw)| = \frac{0.065}{50} = 0.0013\]
+    \item \textbf{Q20:}
+          \begin{figure}[!ht]
+              \includegraphics[width = 13.5cm]{images/Graf4.png}
+          \end{figure}
+          \\Interpretando o gráfico conseguimos ver que é um filtro passa baixo, pois com as frequênciasmais baixas o módulo é maior. Este filtro não é ideal pois exibe as características de transmissão com distorção.
+\end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Filtragem}
@@ -145,5 +171,11 @@
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Amostragem}
+\begin{itemize}
+    \item \textbf{Q25:} O Teorema da Amostragem afirma que, para reconstruir corretamente um sinal contínuo a partir de suas amostras, é necessário que
+          \[w_s > 2w_{onda}\]
+          sendo $w_s$ a taxa de amostragem e $w_{onda}$ a frequências da onda.
+          A frequência máxima no nosso caso é de $10\pi$ radianos por segundo, logo a taxa de amostragem vai ter de ser maior que $20\pi$ amostras por segundo, logo como $w = \frac{2\pi}{T} \Leftrightarrow T = \frac{2\pi}{w}$ temos que a gama de valores terá de ser $T = \frac{2\pi}{20\pi} = \frac{1}{10} = 10^{-1}$.
+\end{itemize}
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \end{document}

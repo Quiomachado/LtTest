@@ -5,5 +5,5 @@
 \contentsline {section}{\numberline {4}Sistemas}{3}{}%
 \contentsline {section}{\numberline {5}Série de Fourier}{5}{}%
 \contentsline {section}{\numberline {6}Resposta em Frequência}{6}{}%
-\contentsline {section}{\numberline {7}Filtragem}{7}{}%
-\contentsline {section}{\numberline {8}Amostragem}{8}{}%
+\contentsline {section}{\numberline {7}Filtragem}{8}{}%
+\contentsline {section}{\numberline {8}Amostragem}{9}{}%
