@@ -107,6 +107,26 @@
           \hspace{184px}$= x_1(t - t_0) + 0.5x_1(t- t_0 - 0.25)$
           \[y_1(t - t_0) = x_1(t - t_0) + 0.5x_1(t - t_0 - 0.25)\]
           \hspace{57px}logo $y_2(t) = y_1(t - t_0) \to$ é invariante no tempo.
+    \item \textbf{Q8:} Resposta do sistema ao impulso unitário: $\delta(t)y(t) = \delta(t) + 0.5\delta(t - 0.25)$
+          \begin{figure}[!ht]
+              \includegraphics[width=12cm]{images/Graf3.png}
+          \end{figure}
+    \item \textbf{Q9:} O sistema apresentado $(y(t))$ possui memória visto que não depende apenas do valor de $x(t)$ mas sim de $x(t)$ e de $(t - 0.25)$. Para além disso é um sistema causal uma vez que o seu output depende apenas dos valores do presente $x(t)$ e do passado $x(t - 0.25)$. Em relação à sua estabilidade, pode-se afirmar que é um sistema estável, visto que não é possível encontrar nenhum input limitado que provocasse um output não limitado:\\
+          Sendo $a, b$ números arbitrários que verificam as condições
+          \[\begin{cases}
+                  |x(t)| < a \\
+                  |x(t - 0.25)| < b
+              \end{cases}\]
+          Então: $-a - 0.5b < y(t) < at + 0.5b$, o que representa um output limitado.
+    \item \textbf{Q10:} O efeito produzido pelo sistema é um eco (prolongamento do som).
+    \item \textbf{Q11:} $x_2(t) = \cos(44t)$, que pode ser escrito como
+          \[x_2(t) = \frac{1}{2}e^{j44t} + \frac{1}{2}e^{-j44t}\]
+          $y_2(t) = x_2(t) + 0.5x_2(t - 0.25) =$
+          \[= \frac{1}{2}e^{j44t} + \frac{1}{2}e^{-j44t} + \frac{1}{2}\left(\frac{1}{2}e^{j44t - 0.25}+\frac{1}{2}e^{-j44t + 0.25}\right)\]
+          \[= \frac{1}{2}e^{j44t} + \frac{1}{2}e^{-j44t} + \frac{1}{4}e^{j44t - 11} + \frac{1}{4}e^{-j44t + 11}\]
+          \[= \frac{1}{2}e^{j44t} + \frac{1}{2}e^{-j44t} + \frac{1}{4e^{11}}e^{j44t} + \frac{e^{11}}{4}e^{-j44t}\]
+          \[= \frac{2e^{11} + 1}{4e^{11}}e^{j44t} + \frac{2+e^{11}}{4}e^{-j44t}\]
+
 \end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
