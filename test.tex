@@ -83,6 +83,8 @@
               \includegraphics[width=6cm]{images/Graf1.png}
               \hspace{10px}
               \includegraphics[width=6cm]{images/Graf2.png}
+              \vspace{-10px}
+              \caption{Comparação entre os gráficos entre $\delta(t) \textrm{ e } \delta(at)$}
           \end{figure}\\
           Área $ = \frac{1}{\Delta}\times\Delta = 1$\hspace{100px}Área $= \frac{1}{\Delta} \times \frac{\Delta}{a} = \frac{1}{a}$\vspace{15px}\\
           Logo, $\delta(at) = \frac{1}{a}\delta(t)$, com $a > 0$.\vspace{5px}
@@ -110,6 +112,8 @@
     \item \textbf{Q8:} Resposta do sistema ao impulso unitário: $\delta(t)y(t) = \delta(t) + 0.5\delta(t - 0.25)$
           \begin{figure}[!ht]
               \includegraphics[width=12cm]{images/Graf3.png}
+              \vspace{-15px}
+              \caption{Visualização dos gráficos}
           \end{figure}
     \item \textbf{Q9:} O sistema apresentado $(y(t))$ possui memória visto que não depende apenas do valor de $x(t)$ mas sim de $x(t)$ e de $(t - 0.25)$. Para além disso é um sistema causal uma vez que o seu output depende apenas dos valores do presente $x(t)$ e do passado $x(t - 0.25)$. Em relação à sua estabilidade, pode-se afirmar que é um sistema estável, visto que não é possível encontrar nenhum input limitado que provocasse um output não limitado:\\
           Sendo $a, b$ números arbitrários que verificam as condições
@@ -191,6 +195,8 @@
     \item \textbf{Q20:}
           \begin{figure}[!ht]
               \includegraphics[width = 13.5cm]{images/Graf4.png}
+              \vspace{-10px}
+              \caption{Gráfico do módulo da resposta em frequência}
           \end{figure}
           \\Interpretando o gráfico conseguimos ver que é um filtro passa baixo, pois com as frequênciasmais baixas o módulo é maior. Este filtro não é ideal pois exibe as características de transmissão com distorção.
 \end{itemize}
@@ -210,6 +216,20 @@
           \[w_s > 2w_{onda}\]
           sendo $w_s$ a taxa de amostragem e $w_{onda}$ a frequências da onda.
           A frequência máxima no nosso caso é de $10\pi$ radianos por segundo, logo a taxa de amostragem vai ter de ser maior que $20\pi$ amostras por segundo, logo como $w = \frac{2\pi}{T} \Leftrightarrow T = \frac{2\pi}{w}$ temos que a gama de valores terá de ser menor que $T = \frac{2\pi}{20\pi} = \frac{1}{10} = 10^{-1}$.
+    \item \textbf{Q26:} Os sinais relacionam-se da seguinte maneira: $xd(n) = xc\left(\frac{n}{100}\right)$, isto é, verifica-se um escalamento com coeficiente $a = \frac{1}{100}$ do gráfico de $xd(n)$ em relação ao de $xc(n)$.
+    \item \textbf{Q27:} Período de $y_{c} = T_{y_c} = 0.1$
+          \newpage
+    \item \textbf{Q28:}
+          \begin{figure}[!ht]
+              \includegraphics[width = 13.5cm]{images/Graf5.png}
+              \vspace{-15px}
+              \caption{Função $x_{c} \textrm{(verde) e } y_{c} \textrm{(azul)}$}
+          \end{figure}
+          \begin{figure}[!ht]
+              \includegraphics[width = 13.5cm]{images/Graf6.png}
+              \vspace{-15px}
+              \caption{Função $x_{c} \textrm{(verde) e } x_{c} \textrm{(azul)}$}
+          \end{figure}
 \end{itemize}
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \end{document}
