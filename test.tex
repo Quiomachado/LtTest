@@ -50,7 +50,7 @@
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Sinais Sinusoidais}
 \begin{itemize}
-    \item \textbf{Q1:} As sinusoidais com frequência mais altas correspondem aos sons mais graves, inversamente, as sinusoidais com frequência mais baixa correspondem aos sons mais agudos.
+    \item \textbf{Q1:} As sinusoidais com frequência mais altas correspondem aos sons mais agudos, inversamente, as sinusoidais com frequência mais baixa correspondem aos sons mais graves.
     \item \textbf{Q2:} A frequência minima que nós conseguimos ouvir foi $55hz$ e a frequência máxima que conseguimos ouvir foi $18000hz$.
 \end{itemize}
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -225,7 +225,9 @@
               \caption{Transformação de Fourier de $xc1 \textrm{(verde) e } yc1 \textrm{(azul)}$}
           \end{figure}
           \newpage
-    \item \textbf{Q29:} O sinal $yc1$ é uma reconstrução de período $0.01$ de uma amostragem de mesmo periodo do sinal $xc1$.
+    \item \textbf{Q29:} O espectro que obtivemos provem dos processos de amostragem e de reconstrução de sinais. O método de amostragem consiste em obter um sinal formado por várias réplicas da transformada de $xc1$, réplicas estas que se vão repetindo com uma frequência pré-definida(frequência de amostragem). Posteriormente, efetua-se um escalamento de maneira a que o sinal se converta num sinal discreto.\\
+          Neste caso, a condição do Teorema da Amostragem $(w_{s}>2w_{onda})$ não se verifica, o que leva ao chamado \textit{aliasing}, provocando diferenças no sinal à saída relativamente ao $xc1$ (Alguns traços do sinal desaparecem).\\
+          No que toca à reconstrução de sinais, é possível afirmar que a frequência do sinal é modificada: frequência $yc1 =$ frequência $xc1$
           \begin{figure}[!ht]
               \includegraphics[width = 13.5cm]{images/Graf5.png}
               \vspace{-15px}
