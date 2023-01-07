@@ -126,11 +126,45 @@
           \[= \frac{1}{2}e^{j44t} + \frac{1}{2}e^{-j44t} + \frac{1}{4}e^{j44t - 11} + \frac{1}{4}e^{-j44t + 11}\]
           \[= \frac{1}{2}e^{j44t} + \frac{1}{2}e^{-j44t} + \frac{1}{4e^{11}}e^{j44t} + \frac{e^{11}}{4}e^{-j44t}\]
           \[= \frac{2e^{11} + 1}{4e^{11}}e^{j44t} + \frac{2+e^{11}}{4}e^{-j44t}\]
-
+          \newpage
+    \item \textbf{Q12:} Para avaliarmos estas propriedades deste sistema, testamos o seu comportamento com vários sinais de input.\vspace{10px}\\
+          Para testar a linearidade, testamos com $x_1(t) = u(t)$ e com $x_2(t) = 2tu(t)$. Ao analisarmos os gráficos de saída obtidos, não se verificou que $y_0(t) = 2ty_1(t)$, logo o sistema não é linear.\vspace{10px}\\
+          Em relação à invariância no tempo, utilizámos o mesmo input $x_1(t) = u(t)$, mas agora um $x_2(t) = u(t - 1)$. Para o sistema ser invariante no tempo, o gráfico obtido de saída de $y_2(t)$ deveria traduzir-se numa translação do gráfico de $y_1(t)$, algo que não acontece. Assim, conclui-se que o sistema não é variante no tempo.\vspace{10px}\\
+          Para testar a memória, utilizámos os inputs $x_1(t) = 0$ e $x_2(t) = \delta(t)$. Apenas em $t = 0$, os valores dos sinais de entrada seriam diferentes na hipótese do sistema não ter memória. No entanto verificam-se mais instantes em que isso acontece, logo o sistema tem memória.\vspace{10px}\\
+          No que diz respeito à causalidade, por mais testes que realizássemos para vários sinais de entrada, nunca seria possível concluir nada pois seria necessário testar toda a infinidade de entradas possíveis. No entanto para os testes que efetuamos, aparenta ser um sinal causal.\vspace{10px}\\
+          Por último, testamos o sistema com alguns sinais de entrada limitados, sendo o resultado obtido também limitado. Contudo, tal como a causalidade, não podemos ter a certeza porque o sistema tem de ter este comportamento para todos os inputs possíveis.
 \end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Série de Fourier}
+\begin{itemize}
+    \item \textbf{Q13:} $w_0 = \frac{2\pi}{T} = \frac{2\pi}{0.4} = 5\pi$\hspace{50px}$T = 0.4$
+          \[a_0 = \frac{1}{T}\int_{T}x(t)dt = \frac{1}{0.4} \times 0.3 = \frac{3}{4} = 0.75\hspace{15px} \vspace{10px}\]
+          Utilizando as propriedades da série de Fourier:\vspace{10px}
+          \[a_k = \frac{1}{T}\int_{-T_1}^{T_1}e^{-jkw_{0}t}dt = \frac{\sin(kw_{0}T_1)}{k\pi} = \frac{\sin(k \times 5\pi \times 0.2)}{k\pi} = \frac{\sin(k\pi)}{k\pi}\]
+          Propriedade do deslocamento $\to b_k = a_{k}e^{-jk(5\pi)0.1} = a_{k}e^{-jk0.5\pi}$\\
+          Existe um offset que provoca um deslocamento do sinal para cima, que afeta apenas $a_0$
+          \[b_k =
+              \begin{cases}
+                  0, \textrm{ }k\neq0 \\
+                  4, \textrm{ }k = 0
+              \end{cases}
+              \hspace{15px}
+              e_k =
+              \begin{cases}
+                  a_{k}e^{-jk0.5\pi}, \textrm{ }k\neq0 \\
+                  a_{0} + 4, \textrm{ }k = 0
+              \end{cases}\]
+          Propriedade da derivada:\vspace{10px}\\
+          Para $k = 0$:
+          \[e_k = jk(5\pi)dk \Leftrightarrow d_k = \frac{e_k}{5\pi jk} \Leftrightarrow d_k = \frac{a_{k}e^{-jk0.5\pi}}{5\pi jk} \Leftrightarrow d_k = \frac{\sin(k\pi)e^{-jk0.5\pi}}{5\pi^{2}k^{2}j}\]
+    \item \textbf{Q14:} \[x_N(t) = \sum_{k = -N}^{N} a_{k}e^{jkw_{0}t} = \sum_{k = -\inf}^{-1}a_{k}e^{jkw_{0}t} + a_{0} + \sum_{k=1}^{+\inf}a_{k}e^{jkw_{0}t}\]
+          \[= \sum_{k = -\inf}^{-1}a_{k}(\cos(kw_{0}t) - j\sin(kw_{0}t)) + a_{0} + \sum_{k = 1}^{+\inf}a_{k}(\cos(kw_{0}t) + j\sin(kw_{0}t))\]
+          \[= a_{0} + \sum_{k=1}^{+\inf}a_{k}\cos(\varphi_{k})\cos(kw_{0}t) - a_{k}\sin(\varphi_{k})\sin(kw_{0}t)\]
+          \[= a_{0} + \sum_{k=1}^{+\inf}a_{k}\cos(kw_{0}t + \varphi_{k})\]
+          Sendo $a = a_{k}\cos(\varphi_k)\hspace{15px}b=-a_k\sin(\varphi_{k})$, então:
+          \[A_{k} = \sqrt{(a^{2}+b^{2})} \textrm{ e } \varphi_{k} = \arctan(-\frac{b}{a}), A_0 = a_0\]
+\end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \section{Resposta em Frequência}
@@ -175,7 +209,7 @@
     \item \textbf{Q25:} O Teorema da Amostragem afirma que, para reconstruir corretamente um sinal contínuo a partir de suas amostras, é necessário que
           \[w_s > 2w_{onda}\]
           sendo $w_s$ a taxa de amostragem e $w_{onda}$ a frequências da onda.
-          A frequência máxima no nosso caso é de $10\pi$ radianos por segundo, logo a taxa de amostragem vai ter de ser maior que $20\pi$ amostras por segundo, logo como $w = \frac{2\pi}{T} \Leftrightarrow T = \frac{2\pi}{w}$ temos que a gama de valores terá de ser $T = \frac{2\pi}{20\pi} = \frac{1}{10} = 10^{-1}$.
+          A frequência máxima no nosso caso é de $10\pi$ radianos por segundo, logo a taxa de amostragem vai ter de ser maior que $20\pi$ amostras por segundo, logo como $w = \frac{2\pi}{T} \Leftrightarrow T = \frac{2\pi}{w}$ temos que a gama de valores terá de ser menor que $T = \frac{2\pi}{20\pi} = \frac{1}{10} = 10^{-1}$.
 \end{itemize}
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \end{document}

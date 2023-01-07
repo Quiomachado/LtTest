@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1673100502 "c:/Users/henri/OneDrive/Documents/Faculdade/LtTest/test.tex" "test.pdf" "test" 1673100503 0
+["pdflatex"] 1673107899 "c:/Users/henri/OneDrive/Documents/Faculdade/LtTest/test.tex" "test.pdf" "test" 1673107900 0
   "C:/Users/henri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1672848011 83255 3eb4ffb7981171850fc29a59916b6f53 ""
   "C:/Users/henri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1672753779 14064 790af3e5d4e0139e6deba17840e0282a ""
   "C:/Users/henri/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1670775939 10805037 82732be7502f590ad3a99b882a281189 ""
@@ -24,6 +24,7 @@
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247593066 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247593067 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247593066 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "C:/Users/henri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247593067 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247593067 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247593067 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247593067 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
@@ -55,15 +56,15 @@
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/tex/latex/lipsum/lipsum.sty" 1633250122 14690 c2c754218a7108db7823a4839c1bc3cd ""
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/tex/latex/tools/indentfirst.sty" 1654687228 1618 6f0598aa81f9ba5cf5d393b4abd3e091 ""
   "C:/Users/henri/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1654687228 32329 5d201ab4b4c773e7c876c2a052b07be3 ""
-  "c:/Users/henri/OneDrive/Documents/Faculdade/LtTest/test.tex" 1673100500 10330 a42c0cc01028f88a8f85af6c0352bc2b ""
+  "c:/Users/henri/OneDrive/Documents/Faculdade/LtTest/test.tex" 1673107892 14009 72343920b38205f85cb493f50d210a8e ""
   "images/Graf1.png" 1672848079 63711 fea6e490a0e0b2ce94ee7f36faec7cda ""
   "images/Graf2.png" 1672848085 64295 bdb005e2ffdcf57844ae3f1718ae00e0 ""
   "images/Graf3.png" 1673013344 65642 49883a4b6d99d70e8115a15361f3d849 ""
   "images/Graf4.png" 1673035506 7383 8f096a23d2f20519c7ff9c0442b4551a ""
   "images/IST.png" 1672776055 13908 27cdd2abeb78a4c13453988bc345ed55 ""
-  "test.aux" 1673100503 964 fda32d8e747231db89aa86da505bcbd8 "pdflatex"
-  "test.tex" 1673100500 10330 a42c0cc01028f88a8f85af6c0352bc2b ""
-  "test.toc" 1673100503 533 51a7d1abb4f4c2a33f6800963a411972 "pdflatex"
+  "test.aux" 1673107900 965 8f6e1d4ed569019f43ac27f7e40d9aa3 "pdflatex"
+  "test.tex" 1673107892 14009 72343920b38205f85cb493f50d210a8e ""
+  "test.toc" 1673107900 534 d7f3734df1b460601dbf414333a5a4d8 "pdflatex"
   (generated)
   "test.aux"
   "test.log"
