@@ -200,15 +200,15 @@
           \end{figure}
           \\Interpretando o gráfico conseguimos ver que é um filtro passa baixo, pois com as frequênciasmais baixas o módulo é maior. Este filtro não é ideal pois exibe as características de transmissão com distorção.
     \item \textbf{Q21:} A equação diferencial a que obedece o sistema é:
-          \[t\frac{dy(t)}{dt} + y(t) = x(t)\]
+          \[\tau\frac{dy(t)}{dt} + y(t) = x(t)\]
           uma vez que se trata de um sistema de\\
           primeira ordem, $RC$.\\
-          Sendo $t>0$ e $x(t) = e^{jwt}: \frac{tdy(t)}{dt} + y(t) = x(t)$\\
+          Sendo $\tau>0$ e $x(t) = e^{jwt}: \frac{\tau dy(t)}{dt} + y(t) = x(t)$\\
           Utilizando os propriedades da transformada da série de Fourier:
-          \[\Leftrightarrow jwY(jw) + Y(jw) = X(jw)\Leftrightarrow\]
-          \[\Leftrightarrow \frac{tjwY(jw)}{X(jw)} + \frac{Y(jw)}{X(jw)} = 1 \Leftrightarrow tjwH(jw) + H(jw) = 1\]
-          \[\Leftrightarrow H(jw)(tjw + 1) = 1\]
-          \[\Leftrightarrow H(jw) = \frac{1}{tjw + 1} \textrm{, Sendo } t = RC, H(jw) = \frac{1}{RCjw + 1}\]
+          \[\Leftrightarrow \tau jwY(jw) + Y(jw) = X(jw)\Leftrightarrow\]
+          \[\Leftrightarrow \frac{\tau jwY(jw)}{X(jw)} + \frac{Y(jw)}{X(jw)} = 1 \Leftrightarrow \tau jwH(jw) + H(jw) = 1\]
+          \[\Leftrightarrow H(jw)(\tau jw + 1) = 1\]
+          \[\Leftrightarrow H(jw) = \frac{1}{\tau jw + 1} \textrm{, Sendo } \tau = RC, H(jw) = \frac{1}{RCjw + 1}\]
           Sendo a resposta do circuito ao impulso unitário $\delta(t)$ dada por $h(t)$
           \[L\delta(\tau) = 1\]
           \[y(t) = \frac{\frac{1}{\tau}}{s + \frac{1}{\tau}} \textrm{ e } x(t) = L^{-1}\{y(t)\} = \frac{1}{\tau}e^{-\frac{\tau}{t}}\]
@@ -216,7 +216,7 @@
           \[ |H(jw)| = |\frac{1}{RCjw + 1}| = \frac{|1|}{|RCjw +1|} = \frac{1}{\sqrt{{(RCw)}^{2} + 1}}\]
           Para calcularmos o $\angle H(jw)$, podemos apenas calcular o desfazamento do sinal de entrada $x(t)$ com o sinal de saída $y(t)$:
           \[\angle H(jw) = \Delta s \times w \textrm{ , sendo } \Delta s \textrm{ o desfazamento.}\]
-    \item \textbf{Q22:} $R = 500 \Omega$
+    \item \textbf{Q22:}
 \end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -225,6 +225,8 @@
     \item \textbf{Q23:} Sendo que um filtro passa-baixo apenas deixa passar as\\
           frequências baixas e rejeita as frequências mais altas, logo este não reproduz bem as zonas de variação rápida do sinal $p$, mas reproduz bem as zonas de variação lenta.\\
           Por sua vez o filtro passa-alto, como é o inverso do filtro passa-baixo, reproduz bem as zonas de variação rápida do sinal $p$, mas não reproduz bem as zonas de variação lenta.
+    \item \textbf{Q24:} O valor aproximado das frequências dessas sinusóides é no intervalo de $800hz$ a $1000hz$, ou seja o intervalo do filtro.\\
+          Com a aplicação deste mesmo filtro ao sinal \textit{p} é de esperar que a zona de frequência mais baixa do sinal, ou seja, com frequência menor que $800hz$ não seja reproduzida. Como a zona de variação rápida do sinal é composta por infinitos sinais de diversas frequências é de esperar que quando se aplica este filtro isto se restrinja e apenas alguns sinais sejam reproduzidos, daí a característica sinusoidal.
 \end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
