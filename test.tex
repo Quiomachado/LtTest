@@ -214,11 +214,19 @@
           \[L\delta(\tau) = 1\]
           \[y(t) = \frac{\frac{1}{\tau}}{s + \frac{1}{\tau}} \textrm{ e } x(t) = L^{-1}\{y(t)\} = \frac{1}{\tau}e^{-\frac{\tau}{t}}\]
           \[\textrm{Logo, } h(t) = x(t)\times u(t) = \frac{1}{\tau}e^{-\frac{\tau}{t}} \times u(t) = \frac{1}{RC}e^{-\frac{t}{RC}}u(t)\]
-          \[ |H(jw)| = |\frac{1}{RCjw + 1}| = \frac{|1|}{|RCjw +1|} = \frac{1}{\sqrt{{(RCw)}^{2} + 1}}\]
+          \[ |H(jw)| = \left|\frac{1}{RCjw + 1}\right| = \frac{|1|}{|RCjw +1|} = \frac{1}{\sqrt{{(RCjw)}^{2} + 1}}\]
           Para calcularmos o $\angle H(jw)$, podemos apenas calcular graficamente o desfazamento do sinal de entrada $x(t)$ com o sinal de saída $y(t)$:
           \[\angle H(jw) = \Delta s \times w \textrm{ , sendo } \Delta s \textrm{ o desfazamento.}\]
           \[\textrm{Ou de outra forma, } \angle H(jw) = -\arctan(wRC)\]
     \item \textbf{Q22:}
+          \begin{enumerate}
+              \item[] $w = 1 \Rightarrow C = (1.41 \times 10^{-4})e^{-\frac{\pi}{2j}}$
+              \item[] $w = 3 \Rightarrow C = (2.36 \times 10^{-3})e^{-\frac{\pi}{2j}}$
+              \item[] $w = 5 \Rightarrow C = (5.91 \times 10^{-3})e^{-\frac{\pi}{2j}}$
+              \item[] $w = 10 \Rightarrow C = (7.70 \times 10^{-3})e^{-\frac{\pi}{2j}}$
+              \item[] $w = 20 \Rightarrow C = (1.52 \times 10^{-2})e^{-\frac{\pi}{2j}}$
+              \item[] $w = 50 \Rightarrow C = (3.04 \times 10^{-2})e^{-\frac{\pi}{2j}}$
+          \end{enumerate}
 \end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -248,7 +256,7 @@
           \end{figure}
           \newpage
     \item \textbf{Q29:} O espectro que obtivemos provem dos processos de amostragem e de reconstrução de sinais. O método de amostragem consiste em obter um sinal formado por várias réplicas da transformada de $xc1$, réplicas estas que se vão repetindo com uma frequência pré-definida (frequência de amostragem). Posteriormente, efetua-se um escalamento de maneira a que o sinal se converta num sinal discreto.\\
-          Neste caso, a condição do Teorema da Amostragem $(w_{s}>2w_{onda})$ não se verifica, o que leva ao chamado \textit{aliasing}, provocando diferenças no sinal à saída relativamente ao $xc1$ (Alguns traços do sinal desaparecem).\\
+          Neste caso, a condição do Teorema da Amostragem $(w_{s}>2w_{onda})$ não se verifica, o que leva ao chamado \textit{aliasing}, provocando diferenças no sinal à saída relativamente ao $xc1$ (Alguns troços do sinal desaparecem).\\
           No que toca à reconstrução de sinais, é possível afirmar que a frequência do sinal é modificada: frequência $yc1 =$ frequência $xc1$
           \begin{figure}[!ht]
               \includegraphics[width = 13.5cm]{images/Graf5.png}
