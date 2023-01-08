@@ -199,6 +199,20 @@
               \caption{Gráfico do módulo da resposta em frequência}
           \end{figure}
           \\Interpretando o gráfico conseguimos ver que é um filtro passa baixo, pois com as frequênciasmais baixas o módulo é maior. Este filtro não é ideal pois exibe as características de transmissão com distorção.
+    \item \textbf{Q21:} A equação diferencial a que obedece o sistema é:
+          \[t\frac{dy(t)}{dt} + y(t) = x(t)\]
+          uma vez que se trata de um sistema de\\
+          primeira ordem, $RC$.\\
+          Sendo $t>0$ e $x(t) = e^{jwt}: \frac{tdy(t)}{dt} + y(t) = x(t)$\\
+          Utilizando os propriedades da transformada da série de Fourier:
+          \[\Leftrightarrow jwY(jw) + Y(jw) = X(jw)\Leftrightarrow\]
+          \[\Leftrightarrow \frac{tjwY(jw)}{X(jw)} + \frac{Y(jw)}{X(jw)} = 1 \Leftrightarrow tjwH(jw) + H(jw) = 1\]
+          \[\Leftrightarrow H(jw)(tjw + 1) = 1\]
+          \[\Leftrightarrow H(jw) = \frac{1}{tjw + 1} \textrm{, Sendo } t = RC, H(jw) = \frac{1}{RCjw + 1}\]
+          Sendo a resposta do circuito ao impulso unitário $\delta(\tau)$ dada por $h(\tau)$
+          \[L\delta(\tau) = 1\]
+          \[y(\tau) = \frac{\frac{1}{\tau}}{s + \frac{1}{\tau}} \textrm{ e } x(\tau) = L^{-1}\{y(\tau)\} = \frac{1}{t}e^{-\frac{\tau}{t}}\]
+          \[\textrm{Logo, } h(\tau) = x(\tau)\times u(\tau) = \frac{1}{t}e^{-\frac{\tau}{t}} \times u(\tau) = \frac{1}{RC}e^{-\frac{\tau}{RC}}u(\tau)\]
 \end{itemize}
 \newpage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
